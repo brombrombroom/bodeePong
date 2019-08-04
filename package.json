@@ -11,8 +11,10 @@
     "passport": "^0.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "signalr": "^2.4.1"
+    "signalr": "^2.4.1",
+    "proxy": "http://localhost:8080"
   },
   "scripts": {
     "start": "react-scripts start",
