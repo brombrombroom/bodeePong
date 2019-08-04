@@ -1,0 +1,17 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "description": "Project3",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "bodeePong",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
