@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
-const uri = 'mongodb://project3:project3@ds233218.mlab.com:33218/heroku_dcxmxmbb'
+const uri = process.env.MongoURI;
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
