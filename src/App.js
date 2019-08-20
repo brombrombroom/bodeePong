@@ -6,6 +6,13 @@ import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Home from './components/home'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import 'aframe'
+import { Entity, Scene } from 'aframe-react'
+import 'aframe-environment-component'
+import 'networked-aframe'
+
 
 class App extends Component {
   constructor() {
@@ -82,5 +89,36 @@ class App extends Component {
     );
   }
 }
+
+
+function Template({ children, ...attrs }) {
+  return (
+    <template
+      {...attrs}
+      dangerouslySetInnerHTML={{ __html: children }}
+    />
+  );
+}
+
+class App extends React.Component {
+    render() {
+        return (<div>
+      <Scene environment="preset: forest;" networked-scene={{
+        serverURL: 'http://localhost:8080/',
+        connectOnLoad: true,
+        onConnect: 'onConnect',
+        adapter: 'wseasyrtc',
+        audio: false,
+        debug: false
+      }}>
+      <Template id="avatar-template">
+           <div><Entity primitive="a-sphere" color="#f00"></Entity></div>
+      </Template>
+        <Entity id="player" networked={{template: '#avatar-template',attachTemplateToLocal:false}} spawn-in-circle={{radius:3}} wasd-controls look-controls>
+      </Entity>
+      </Scene></div>);
+    }
+}
+ReactDOM.render(<App />, document.getElementById('root'));
 
 export default App;
