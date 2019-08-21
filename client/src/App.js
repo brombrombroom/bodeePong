@@ -6,6 +6,15 @@ import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Home from './components/home'
+import FrontBody from './components/frontBody';
+import HowtoPlay from './components/howToPlay';
+import NavbarFront from './components/navbarFront';
+import Requierments from './components/Requierments';
+import SubIcons from './components/subIcons';
+import WhatIsBodee from './components/whatIsBodee';
+
+
+
 
 class App extends Component {
   constructor() {
@@ -52,7 +61,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+ <FrontBody />
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
         {/* greet user if logged in: */}
         {this.state.loggedIn &&
@@ -62,6 +71,8 @@ class App extends Component {
           </div>
         }
         {/* Routes to different components */}
+        
+        
         <Route
           exact path="/"
           component={Home} />
@@ -78,6 +89,8 @@ class App extends Component {
             <Signup/>}
         />
 
+
+           
       </div>
     );
   }
