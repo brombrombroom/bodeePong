@@ -12,6 +12,9 @@
 .navbar-brand {
     font-size: 25px;
     font-family: 'Press Start 2P', cursive;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .nav-link {
@@ -40,4 +43,7 @@
 .navRow{
     bottom: 40px;
     margin: 0px;
+}
+.navbar-nav{
+left: -430px;
 }

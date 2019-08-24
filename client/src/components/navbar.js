@@ -43,6 +43,8 @@ class Navbar extends Component {
                             <section className="navbar-section d-flex justify-content-center">
                                 <Link to="#" className="btn " onClick={this.logout}>
                                     <span className="text-secondary">Logout</span></Link>
+                                    <Link to="#" className="btn " onClick={this.logout}>
+                                    <span className="text-secondary">Play Now</span></Link>
 
                             </section>
                         ) : (
@@ -54,14 +56,16 @@ class Navbar extends Component {
                                 <section className="navbar-section d-flex justify-content-center" >
                                 <div className="d-flex justify-content-center">
                                 
-                                    <Link to="/" className="btn btn-link col-4 close-btn">
-                                        <span className="text-secondary">Home</span>
+                                    
+                                    
+                                    <Link to="/signup" className="btn btn-link col-4">
+                                        <span className="text-secondary">Sign Up</span>
                                     </Link>
                                     <Link to="/login" className="btn btn-link col-4">
                                         <span className="text-secondary">Login</span>
                                     </Link>
-                                    <Link to="/signup" className="btn btn-link col-4">
-                                        <span className="text-secondary">Sign Up</span>
+                                    <Link to="/" className="btn btn-link col-4 close-btn">
+                                        <span className="text-secondary">Close Form</span>
                                     </Link>
                                     </div>
                                     
