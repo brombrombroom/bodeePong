@@ -25,8 +25,8 @@
 
 
 .navbar {
-
-  margin-top: auto;
+/* 
+  margin-top: auto; */
 
 }
 #top-filler {
@@ -34,7 +34,7 @@
 }
 
 #nav-container {
-  align-items: flex-end;
+  
 }
 
 @keyframes App-logo-spin {
@@ -44,4 +44,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+  
 }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./whatIsBodee.css";
 class whatIsBodee extends React.Component {
   render() {
     return (

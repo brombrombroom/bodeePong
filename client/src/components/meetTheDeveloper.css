@@ -1,0 +1,30 @@
+.card-body {
+/* width: 18rem; */
+display: inline-block;
+margin-top: 20px;
+}
+.row{
+    margin-top: 40px;
+}
+
+#MTD {
+    margin-top: 250px;
+}
+
+.devs{
+    background-color: #fffc3b;
+background-image: linear-gradient(90deg, #fffc3b 0%, #ff8225 74%);
+
+}
+
+#devs2{
+    background-color: #fffc3b;
+    background-image: linear-gradient(270deg, #fffc3b 0%, #ff8225 74%);
+    
+
+
+}
+
+.card-title {
+    font-family: 'Press Start 2P', cursive;
+}

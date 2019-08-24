@@ -58,7 +58,7 @@ class LoginForm extends Component {
             return (
                 <div>
                     <h4>Login</h4>
-                    <form className="form-horizontal">
+                    <form className="form-horizontal d-flex justify-content-center">
                         <div className="form-group">
                             <div className="col-1 col-ml-auto">
                                 <label className="form-label" htmlFor="username">Username</label>
@@ -88,7 +88,9 @@ class LoginForm extends Component {
                                 />
                             </div>
                         </div>
-                        <div className="form-group ">
+                        
+                    </form>
+                    <div className="form-group ">
                             <div className="col-7"></div>
                             <button
                                 className="btn btn-primary col-1 col-mr-auto"
@@ -96,7 +98,6 @@ class LoginForm extends Component {
                                 onClick={this.handleSubmit}
                                 type="submit">Login</button>
                         </div>
-                    </form>
                 </div>
             )
         }

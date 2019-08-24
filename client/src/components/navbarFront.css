@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Faster+One|Knewave|Monofett|Press+Start+2P&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 5px 5px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.nav-link {
+ 
+}
+
+.nav-item-home{
+    align-items: left;
+
+}
+
+.nav-whole-bar {
+     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 0px;
+   
+
+
+}
+
+.navPad {
+    bottom: 40px;
+    position: relative;
+
+}
+
+.navRow{
+    bottom: 40px;
+    margin: 0px;
+}

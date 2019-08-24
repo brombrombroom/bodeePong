@@ -1,0 +1,19 @@
+
+.frontBody {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: lightseagreen; 
+    top: -40px;
+   padding-top: 50px;
+    position: relative;
+    z-index: -10;
+}
+
+#gameImg {
+    height: 600px;
+    width: 100%;
+    top: 20px;
+    z-index: -10;
+   
+
+}

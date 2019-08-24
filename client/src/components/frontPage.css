@@ -1,0 +1,63 @@
+#frontPage-Logo {
+    align-items: center;
+}
+
+body {
+    background-color: rgb(118, 118, 250);
+}
+
+.frontBody {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: lightseagreen; 
+    
+}
+
+#gameImg {
+    height: 600px;
+    width: 1200px;
+}
+
+  .front-page-sub-icons   {
+    width: 500px;
+    height: 150px;
+    border: 5px solid green;
+    padding: 50px;  
+    display: inline-block;
+    align-items: center;
+  }
+ 
+#sub-icon-right {
+    margin-right: 150px;
+    border-radius: 15px;
+}
+
+#sub-icon-left {
+
+    margin-left: 300px;
+    border-radius: 15px;
+}
+ 
+.chapter {
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.heading {
+    text-align: center;
+    border-bottom-style: solid;
+}
+
+.chapterInfo {
+    font-size: 20px;
+}
+
+#nav-item {
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    
+
+}
+

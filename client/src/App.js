@@ -12,6 +12,8 @@ import NavbarFront from './components/navbarFront';
 import Requierments from './components/Requierments';
 import SubIcons from './components/subIcons';
 import WhatIsBodee from './components/whatIsBodee';
+import HowToPlay from './components/howToPlay';
+import MeetTheDeveloper from './components/meetTheDevloper';
 
 
 
@@ -61,12 +63,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
- <FrontBody />
-        <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
+
+<Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
         {/* greet user if logged in: */}
         {this.state.loggedIn &&
           <div>
-              <p>This will be the welcome page and the beginning layout of the minecraft template.</p>
+              
 
           </div>
         }
@@ -88,6 +90,16 @@ class App extends Component {
           render={() =>
             <Signup/>}
         />
+
+      <NavbarFront />
+        <FrontBody />
+ <SubIcons />
+ <WhatIsBodee />
+ <Requierments />
+ <HowToPlay />
+ <MeetTheDeveloper />
+       
+       
 
 
            

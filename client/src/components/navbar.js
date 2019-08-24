@@ -4,6 +4,7 @@ import { Route, Link } from 'react-router-dom'
 import logo from '../logo.svg';
 import '../App.css';
 import axios from 'axios'
+import "./navbar.css";
 
 class Navbar extends Component {
     constructor() {
@@ -15,17 +16,17 @@ class Navbar extends Component {
         event.preventDefault()
         console.log('logging out')
         axios.post('/user/logout').then(response => {
-          console.log(response.data)
-          if (response.status === 200) {
-            this.props.updateUser({
-              loggedIn: false,
-              username: null
-            })
-          }
+            console.log(response.data)
+            if (response.status === 200) {
+                this.props.updateUser({
+                    loggedIn: false,
+                    username: null
+                })
+            }
         }).catch(error => {
             console.log('Logout error')
         })
-      }
+    }
 
     render() {
         const loggedIn = this.props.loggedIn;
@@ -33,37 +34,54 @@ class Navbar extends Component {
         console.log(this.props);
 
         return (
-            <div>
-
-                <header className="navbar App-header" id="nav-container">
-                    <div className="col-4" >
+            
+<div className="navbar-login col-4">
+           
+                <header className="navbar App-header mb-0 d-flex justify-content-center" id="nav-container" >
+                  
                         {loggedIn ? (
-                            <section className="navbar-section">
-                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
-                                <span className="text-secondary">Logout</span></Link>
+                            <section className="navbar-section d-flex justify-content-center">
+                                <Link to="#" className="btn " onClick={this.logout}>
+                                    <span className="text-secondary">Logout</span></Link>
 
                             </section>
                         ) : (
-                                <section className="navbar-section">
-                                    <Link to="/" className="btn btn-link text-secondary">
+                            <div className="container d-flex justify-content-center">
+                            <div className="row d-flex justify-content-center">
+                            <div className="col-4"></div>
+                            
+
+                                <section className="navbar-section d-flex justify-content-center" >
+                                <div className="d-flex justify-content-center">
+                                
+                                    <Link to="/" className="btn btn-link col-4 close-btn">
                                         <span className="text-secondary">Home</span>
-                                        </Link>
-                                    <Link to="/login" className="btn btn-link text-secondary">
-                                    <span className="text-secondary">Login</span>
-				</Link>
-                                    <Link to="/signup" className="btn btn-link">
-                                    <span className="text-secondary">Sign Up</span>
-				</Link>
+                                    </Link>
+                                    <Link to="/login" className="btn btn-link col-4">
+                                        <span className="text-secondary">Login</span>
+                                    </Link>
+                                    <Link to="/signup" className="btn btn-link col-4">
+                                        <span className="text-secondary">Sign Up</span>
+                                    </Link>
+                                    </div>
+                                    
                                 </section>
+                                <div className="col-4"></div>
+                                </div>
+                                </div>
+
+                                
+
                             )}
-                    </div>
-                    <div className="col-4 col-mr-auto">
+                  
+                    {/* <div className="col-4 col-mr-auto">
                     <div id="top-filler"></div>
                         <img src={logo} className="App-logo" alt="logo" />
                         <h1 className="App-title">BodeePong</h1>
-                    </div>
+                    </div> */}
                 </header>
-            </div>
+</div>
+         
 
         );
 

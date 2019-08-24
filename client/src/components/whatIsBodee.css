@@ -1,0 +1,16 @@
+.heading {
+    font-size: 35px;
+    border-bottom: 3px solid black;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.chapterInfo {
+    font-size: 30px;
+}
+
+.chapter{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 250px;
+}
