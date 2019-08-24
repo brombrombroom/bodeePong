@@ -12,7 +12,7 @@ class subIcons extends React.Component {
         </a>
         <a className="front-page-sub-icons badge badge-pill badge-danger col-6" id="sub-icon-right" href="#whatIsBodee">
           <h4>What is Bodeepong?</h4>
-          <p>A discription of what Bodeepong is.</p>
+          <p>A description of what Bodeepong is.</p>
         </a>
         </div>
       </div>
